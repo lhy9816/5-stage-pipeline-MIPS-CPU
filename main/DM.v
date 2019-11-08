@@ -48,7 +48,6 @@ module DM(clk, reset, times_M, Instr_addr, MemWrite, MemAddr, Byte_sel, DataIn, 
 					 (Byte_sel == 4'b0001) ? {MemOut[31:8], DataIn[7:0]}:
 																					MemOut;
 
-
 	DM_ip _DM (
 		.clka(clk), // input clka
 		.rsta(reset), // input rsta
